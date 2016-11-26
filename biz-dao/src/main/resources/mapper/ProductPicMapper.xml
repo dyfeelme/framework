@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.ProductPicMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.ProductPic" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="product_pic_id" property="productPicId" jdbcType="INTEGER" />
+    <result column="pic_url" property="picUrl" jdbcType="VARCHAR" />
+    <result column="pic_type" property="picType" jdbcType="INTEGER" />
+    <result column="product_id" property="productId" jdbcType="INTEGER" />
+    <result column="display_index" property="displayIndex" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

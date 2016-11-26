@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.zs</groupId>
+		<artifactId>framework</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<groupId>com.zs.framework</groupId>
+	<artifactId>biz-openapi</artifactId>
+	<packaging>war</packaging>
+	<name>biz-openapi Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<!-- TAE Nexus服务器 -->
+	<repositories>
+		<repository>
+			<id>taerepository</id>
+			<url>http://mvnrepo.tae.taobao.com/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>taesnapshots</id>
+			<url>http://mvnrepo.tae.taobao.com/content/repositories/snapshots/ </url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>taereleases</id>
+			<url>http://mvnrepo.tae.taobao.com/content/repositories/releases/ </url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+
+	<dependencies>
+	
+	<dependency>
+  	<groupId>javax.servlet</groupId>
+  	<artifactId>javax.servlet-api</artifactId>
+  </dependency>
+
+		<!-- Alibaba -->
+		<!-- OSS -->
+
+		<!-- OpenIM -->
+
+		<!-- 顽兔多媒体 SDK -->
+		<!-- <dependency>
+			<groupId>com.alibaba.media</groupId>
+			<artifactId>sdk</artifactId>
+			<version>1.2.7</version>
+		</dependency> -->
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>biz-openapi</finalName>
+		
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>${java.encoding}</encoding>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.StationMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.Station" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="station_id" property="stationId" jdbcType="INTEGER" />
+    <result column="station_name" property="stationName" jdbcType="VARCHAR" />
+    <result column="city_id" property="cityId" jdbcType="INTEGER" />
+    <result column="visible_flag" property="visibleFlag" jdbcType="INTEGER" />
+    <result column="longitude" property="longitude" jdbcType="VARCHAR" />
+    <result column="latitude" property="latitude" jdbcType="VARCHAR" />
+    <result column="station_address" property="stationAddress" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="is_arrang" property="isArrang" jdbcType="INTEGER" />
+    <result column="business_time" property="businessTime" jdbcType="VARCHAR" />
+    <result column="lng_price" property="lngPrice" jdbcType="DECIMAL" />
+    <result column="cng_price" property="cngPrice" jdbcType="DECIMAL" />
+    <result column="station_instr" property="stationInstr" jdbcType="VARCHAR" />
+    <result column="service_item_id" property="serviceItemId" jdbcType="VARCHAR" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="operator_id" property="operatorId" jdbcType="INTEGER" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>

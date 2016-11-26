@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.ChargeHistoryMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.ChargeHistory" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="record_id" property="recordId" jdbcType="INTEGER" />
+    <result column="charge_type" property="chargeType" jdbcType="INTEGER" />
+    <result column="member_id" property="memberId" jdbcType="INTEGER" />
+    <result column="bill_no" property="billNo" jdbcType="VARCHAR" />
+    <result column="card_type" property="cardType" jdbcType="VARCHAR" />
+    <result column="gas_card_no" property="gasCardNo" jdbcType="VARCHAR" />
+    <result column="gas_station" property="gasStation" jdbcType="VARCHAR" />
+    <result column="recharge_record_id" property="rechargeRecordId" jdbcType="VARCHAR" />
+    <result column="gas_card_balance" property="gasCardBalance" jdbcType="DECIMAL" />
+    <result column="charge_time" property="chargeTime" jdbcType="TIMESTAMP" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="comment" property="comment" jdbcType="VARCHAR" />
+    <result column="pay_type" property="payType" jdbcType="INTEGER" />
+    <result column="charge_money" property="chargeMoney" jdbcType="DECIMAL" />
+    <result column="pay_no" property="payNo" jdbcType="VARCHAR" />
+    <result column="online_payment_status" property="onlinePaymentStatus" jdbcType="INTEGER" />
+    <result column="pay_time" property="payTime" jdbcType="TIMESTAMP" />
+    <result column="account_state" property="accountState" jdbcType="INTEGER" />
+    <result column="operator_id" property="operatorId" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="delete_no" property="deleteNo" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

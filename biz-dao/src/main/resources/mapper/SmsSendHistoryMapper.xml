@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.SmsSendHistoryMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.SmsSendHistory" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="sms_send_history_id" property="smsSendHistoryId" jdbcType="INTEGER" />
+    <result column="sms_waiting_send_id" property="smsWaitingSendId" jdbcType="INTEGER" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="send_time" property="sendTime" jdbcType="TIMESTAMP" />
+    <result column="send_status" property="sendStatus" jdbcType="INTEGER" />
+    <result column="sms_type" property="smsType" jdbcType="INTEGER" />
+    <result column="priority" property="priority" jdbcType="INTEGER" />
+    <result column="admin_id" property="adminId" jdbcType="INTEGER" />
+    <result column="service_return_info" property="serviceReturnInfo" jdbcType="VARCHAR" />
+    <result column="error_count" property="errorCount" jdbcType="INTEGER" />
+    <result column="group_send_id" property="groupSendId" jdbcType="INTEGER" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="receive_mobile" property="receiveMobile" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

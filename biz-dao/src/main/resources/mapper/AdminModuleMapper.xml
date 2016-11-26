@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.AdminModuleMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.AdminModule" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="menu_id" property="menuId" jdbcType="INTEGER" />
+    <result column="module_no" property="moduleNo" jdbcType="VARCHAR" />
+    <result column="module_name" property="moduleName" jdbcType="VARCHAR" />
+    <result column="action_path" property="actionPath" jdbcType="VARCHAR" />
+    <result column="group_name" property="groupName" jdbcType="VARCHAR" />
+    <result column="display_index" property="displayIndex" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

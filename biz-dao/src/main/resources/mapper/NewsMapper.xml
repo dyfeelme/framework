@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.NewsMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.News" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="news_id" property="newsId" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="abstract" property="abstract" jdbcType="VARCHAR" />
+    <result column="related_station" property="relatedStation" jdbcType="VARCHAR" />
+    <result column="news_status" property="newsStatus" jdbcType="INTEGER" />
+    <result column="release_time" property="releaseTime" jdbcType="TIMESTAMP" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="operator_id" property="operatorId" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="news_pic" property="newsPic" jdbcType="VARCHAR" />
+    <result column="share_message" property="shareMessage" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

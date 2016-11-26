@@ -1,0 +1,56 @@
+package com.zs.biz.drools;
+
+import com.zs.biz.drools.service.*
+import com.zs.biz.drools.domain.*
+ 
+global DroolsServiceUtil droolsServiceUtil;
+
+declare Today
+  @role(event)
+  @expires(24h)
+end
+
+declare CaseSupervision
+  @role(event)
+  @timestamp(entryDtm)
+end
+
+rule "Set Today"
+  timer (cron: 0 0 0 * * ?)
+  salience 99999  // optional
+  no-loop
+  when
+  then
+    insert(new Today()); 
+end
+
+rule "Case Supervision"
+  dialect "mvel"
+  when
+    $today : Today()
+    $memberCase : MemberCase(endDtm == null, startDtm before[30d] $today)
+    not CaseSupervision(memberCase == $ memberCase) 
+      over window:time(30d) from entry-point SupervisionStream
+    then
+      insertLogical(new TransientReminder($memberCase, (Clinician)null, 
+        "CaseReminder", "No supervision on the case in last 30 days."));
+end
+ 
+query "CaseReminderQuery"
+  $caseReminder : TransientReminder(reminderTypeCd == "CaseReminder")
+end
+ 
+rule "Clinician Supervision"
+  dialect "mvel"
+  when
+    $clinician : Clinician()
+    not CaseSupervision(clinician == $clinician) 
+      over window:time(7d) from entry-point SupervisionStream
+  then
+    insertLogical(new TransientReminder((MemberCase)null, $clinician, 
+      "ClinicianReminder", "Clinician completed no evaluation in last 7 days."));
+end
+ 
+query "ClinicianReminderQuery"
+  $clinicianReminder : TransientReminder(reminderTypeCd == "ClinicianReminder")
+end			

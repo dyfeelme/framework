@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.CityInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.CityInfo" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="city_id" property="cityId" jdbcType="INTEGER" />
+    <result column="city_name" property="cityName" jdbcType="VARCHAR" />
+    <result column="city_initial_letter" property="cityInitialLetter" jdbcType="VARCHAR" />
+    <result column="valid_flag" property="validFlag" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

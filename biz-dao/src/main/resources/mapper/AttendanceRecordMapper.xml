@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.AttendanceRecordMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.AttendanceRecord" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="record_id" property="recordId" jdbcType="INTEGER" />
+    <result column="member_id" property="memberId" jdbcType="INTEGER" />
+    <result column="sign_time" property="signTime" jdbcType="TIMESTAMP" />
+    <result column="bonus_change" property="bonusChange" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

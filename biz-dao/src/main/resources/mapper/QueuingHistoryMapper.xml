@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.QueuingHistoryMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.QueuingHistory" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="queuing_id" property="queuingId" jdbcType="INTEGER" />
+    <result column="station_id" property="stationId" jdbcType="INTEGER" />
+    <result column="member_id" property="memberId" jdbcType="INTEGER" />
+    <result column="queuing_no" property="queuingNo" jdbcType="INTEGER" />
+    <result column="queuing_no_status" property="queuingNoStatus" jdbcType="INTEGER" />
+    <result column="operator_id" property="operatorId" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="service_time" property="serviceTime" jdbcType="TIMESTAMP" />
+    <result column="reminding_status" property="remindingStatus" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

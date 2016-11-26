@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.MemberInviteHistoryMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.MemberInviteHistory" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="invite_id" property="inviteId" jdbcType="INTEGER" />
+    <result column="inviter_id" property="inviterId" jdbcType="INTEGER" />
+    <result column="member_id" property="memberId" jdbcType="INTEGER" />
+    <result column="to_mobile_no" property="toMobileNo" jdbcType="VARCHAR" />
+    <result column="gained_bonus" property="gainedBonus" jdbcType="INTEGER" />
+    <result column="invite_time" property="inviteTime" jdbcType="TIMESTAMP" />
+    <result column="activate_time" property="activateTime" jdbcType="TIMESTAMP" />
+    <result column="activate_flag" property="activateFlag" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>

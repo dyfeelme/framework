@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.EshopOrderMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.EshopOrder" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="order_id" property="orderId" jdbcType="INTEGER" />
+    <result column="order_no" property="orderNo" jdbcType="VARCHAR" />
+    <result column="delivery_type" property="deliveryType" jdbcType="INTEGER" />
+    <result column="station_id" property="stationId" jdbcType="INTEGER" />
+    <result column="pickself_no" property="pickselfNo" jdbcType="VARCHAR" />
+    <result column="pickup_time" property="pickupTime" jdbcType="DATE" />
+    <result column="mail_address" property="mailAddress" jdbcType="VARCHAR" />
+    <result column="zip_code" property="zipCode" jdbcType="VARCHAR" />
+    <result column="order_status" property="orderStatus" jdbcType="INTEGER" />
+    <result column="visiable_flag" property="visiableFlag" jdbcType="INTEGER" />
+    <result column="delivery_corp" property="deliveryCorp" jdbcType="INTEGER" />
+    <result column="delivery_no" property="deliveryNo" jdbcType="VARCHAR" />
+    <result column="auto_time" property="autoTime" jdbcType="VARCHAR" />
+    <result column="receive_time" property="receiveTime" jdbcType="TIMESTAMP" />
+    <result column="receiver" property="receiver" jdbcType="VARCHAR" />
+    <result column="pick_phone" property="pickPhone" jdbcType="VARCHAR" />
+    <result column="total_bonus" property="totalBonus" jdbcType="INTEGER" />
+    <result column="member_comment" property="memberComment" jdbcType="VARCHAR" />
+    <result column="platform_comment" property="platformComment" jdbcType="VARCHAR" />
+    <result column="sender_id" property="senderId" jdbcType="INTEGER" />
+    <result column="deliver_time" property="deliverTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="member_id" property="memberId" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

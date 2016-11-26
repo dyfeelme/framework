@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.AppVersionMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.AppVersion" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="version_id" property="versionId" jdbcType="INTEGER" />
+    <result column="internal_version_no" property="internalVersionNo" jdbcType="INTEGER" />
+    <result column="version_no" property="versionNo" jdbcType="VARCHAR" />
+    <result column="platform" property="platform" jdbcType="VARCHAR" />
+    <result column="update_description" property="updateDescription" jdbcType="VARCHAR" />
+    <result column="update_url" property="updateUrl" jdbcType="VARCHAR" />
+    <result column="app_type" property="appType" jdbcType="INTEGER" />
+    <result column="real_edition" property="realEdition" jdbcType="INTEGER" />
+    <result column="lowest_edition" property="lowestEdition" jdbcType="INTEGER" />
+    <result column="force_update_flag" property="forceUpdateFlag" jdbcType="INTEGER" />
+    <result column="release_date" property="releaseDate" jdbcType="DATE" />
+    <result column="create_user" property="createUser" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_user" property="updateUser" jdbcType="INTEGER" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>

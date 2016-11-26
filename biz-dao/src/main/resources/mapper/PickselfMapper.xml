@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.PickselfMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.Pickself" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="pickself_id" property="pickselfId" jdbcType="INTEGER" />
+    <result column="product_id" property="productId" jdbcType="INTEGER" />
+    <result column="station_id" property="stationId" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.GasFillingHistoryTempMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.GasFillingHistoryTemp" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="record_id" property="recordId" jdbcType="INTEGER" />
+    <result column="consume_item_id" property="consumeItemId" jdbcType="VARCHAR" />
+    <result column="consume_type" property="consumeType" jdbcType="INTEGER" />
+    <result column="gas_card_no" property="gasCardNo" jdbcType="VARCHAR" />
+    <result column="station_id" property="stationId" jdbcType="INTEGER" />
+    <result column="gas_station" property="gasStation" jdbcType="VARCHAR" />
+    <result column="consume_time" property="consumeTime" jdbcType="TIMESTAMP" />
+    <result column="consume_money" property="consumeMoney" jdbcType="DECIMAL" />
+    <result column="comment" property="comment" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="member_id" property="memberId" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

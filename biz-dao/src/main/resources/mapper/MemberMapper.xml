@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.MemberMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.Member" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="member_id" property="memberId" jdbcType="INTEGER" />
+    <result column="member_name" property="memberName" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="INTEGER" />
+    <result column="mobile_no" property="mobileNo" jdbcType="VARCHAR" />
+    <result column="driving_license" property="drivingLicense" jdbcType="VARCHAR" />
+    <result column="car_no" property="carNo" jdbcType="VARCHAR" />
+    <result column="inviter" property="inviter" jdbcType="INTEGER" />
+    <result column="invite_code" property="inviteCode" jdbcType="VARCHAR" />
+    <result column="blance" property="blance" jdbcType="DECIMAL" />
+    <result column="bonus" property="bonus" jdbcType="INTEGER" />
+    <result column="member_state" property="memberState" jdbcType="INTEGER" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="operator_id" property="operatorId" jdbcType="INTEGER" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="reg_time" property="regTime" jdbcType="TIMESTAMP" />
+    <result column="member_pic" property="memberPic" jdbcType="VARCHAR" />
+    <result column="longitude" property="longitude" jdbcType="VARCHAR" />
+    <result column="latitude" property="latitude" jdbcType="VARCHAR" />
+    <result column="pay_token" property="payToken" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

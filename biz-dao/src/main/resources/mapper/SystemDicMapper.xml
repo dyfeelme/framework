@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.SystemDicMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.SystemDic" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="dic_id" property="dicId" jdbcType="INTEGER" />
+    <result column="biz_no" property="bizNo" jdbcType="VARCHAR" />
+    <result column="biz_code" property="bizCode" jdbcType="INTEGER" />
+    <result column="biz_name" property="bizName" jdbcType="VARCHAR" />
+    <result column="biz_code_index" property="bizCodeIndex" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.OrderDetailMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.OrderDetail" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="order_detail_id" property="orderDetailId" jdbcType="INTEGER" />
+    <result column="order_id" property="orderId" jdbcType="INTEGER" />
+    <result column="product_id" property="productId" jdbcType="INTEGER" />
+    <result column="product_name" property="productName" jdbcType="VARCHAR" />
+    <result column="product_bonus" property="productBonus" jdbcType="INTEGER" />
+    <result column="change_count" property="changeCount" jdbcType="INTEGER" />
+    <result column="sum_bonus" property="sumBonus" jdbcType="INTEGER" />
+    <result column="comment_flag" property="commentFlag" jdbcType="INTEGER" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="create_datetime" property="createDatetime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.ProductMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.Product" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="product_id" property="productId" jdbcType="INTEGER" />
+    <result column="product_group_id" property="productGroupId" jdbcType="INTEGER" />
+    <result column="no" property="no" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="visible_flag" property="visibleFlag" jdbcType="INTEGER" />
+    <result column="exchange_bouns" property="exchangeBouns" jdbcType="INTEGER" />
+    <result column="suggest_price" property="suggestPrice" jdbcType="DECIMAL" />
+    <result column="account_of_change" property="accountOfChange" jdbcType="INTEGER" />
+    <result column="product_stock" property="productStock" jdbcType="INTEGER" />
+    <result column="rate" property="rate" jdbcType="DECIMAL" />
+    <result column="rate_total" property="rateTotal" jdbcType="INTEGER" />
+    <result column="is_pick_self" property="isPickSelf" jdbcType="INTEGER" />
+    <result column="comment" property="comment" jdbcType="VARCHAR" />
+    <result column="operator_id" property="operatorId" jdbcType="INTEGER" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="create_datetime" property="createDatetime" jdbcType="TIMESTAMP" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="top_flag" property="topFlag" jdbcType="INTEGER" />
+    <result column="product_intro" property="productIntro" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

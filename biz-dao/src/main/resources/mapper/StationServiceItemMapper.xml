@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.StationServiceItemMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.StationServiceItem" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="service_item_id" property="serviceItemId" jdbcType="INTEGER" />
+    <result column="service_name" property="serviceName" jdbcType="VARCHAR" />
+    <result column="item_image" property="itemImage" jdbcType="VARCHAR" />
+    <result column="update_user" property="updateUser" jdbcType="INTEGER" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="display_index" property="displayIndex" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

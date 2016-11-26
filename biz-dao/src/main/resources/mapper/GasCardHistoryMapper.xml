@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.GasCardHistoryMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.GasCardHistory" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="history_id" property="historyId" jdbcType="INTEGER" />
+    <result column="card_type" property="cardType" jdbcType="VARCHAR" />
+    <result column="gas_card_no" property="gasCardNo" jdbcType="VARCHAR" />
+    <result column="member_id" property="memberId" jdbcType="INTEGER" />
+    <result column="mobile_phone" property="mobilePhone" jdbcType="VARCHAR" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="id_no" property="idNo" jdbcType="VARCHAR" />
+    <result column="gas_card_status" property="gasCardStatus" jdbcType="INTEGER" />
+    <result column="isCharge" property="ischarge" jdbcType="INTEGER" />
+    <result column="parent_card_no" property="parentCardNo" jdbcType="VARCHAR" />
+    <result column="car_no" property="carNo" jdbcType="VARCHAR" />
+    <result column="binding_time" property="bindingTime" jdbcType="TIMESTAMP" />
+    <result column="unbinding_time" property="unbindingTime" jdbcType="TIMESTAMP" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

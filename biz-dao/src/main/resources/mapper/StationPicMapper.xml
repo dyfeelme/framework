@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.StationPicMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.StationPic" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="station_pic_id" property="stationPicId" jdbcType="INTEGER" />
+    <result column="pic_url" property="picUrl" jdbcType="VARCHAR" />
+    <result column="pic_type" property="picType" jdbcType="INTEGER" />
+    <result column="station_id" property="stationId" jdbcType="INTEGER" />
+    <result column="display_index" property="displayIndex" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

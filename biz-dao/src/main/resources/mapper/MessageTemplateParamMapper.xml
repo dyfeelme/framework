@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.framework.biz.mapper.MessageTemplateParamMapper" >
+  <resultMap id="BaseResultMap" type="com.zs.framework.biz.model.MessageTemplateParam" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="param_id" property="paramId" jdbcType="INTEGER" />
+    <result column="template_no" property="templateNo" jdbcType="VARCHAR" />
+    <result column="cn_name" property="cnName" jdbcType="VARCHAR" />
+    <result column="en_name" property="enName" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>
